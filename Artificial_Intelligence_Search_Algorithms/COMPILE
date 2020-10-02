@@ -1,9 +1,0 @@
-#!/bin/bash
-
-echo COMPILING
-
-g++ -std=c++11 -c ./src/Game.cpp ./src/GameBank.cpp ./src/GameState.cpp ./src/SearchService.cpp ./src/FileUtils.cpp ./src/SearchSolution.cpp
-echo LINKING
-g++ -o Game.exe Game.o GameBank.o GameState.o SearchService.o FileUtils.o SearchSolution.o
-
-echo DONE
